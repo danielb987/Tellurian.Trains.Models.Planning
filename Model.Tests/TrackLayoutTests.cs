@@ -12,7 +12,7 @@ namespace Tellurian.Trains.Models.Planning.Tests
             var (item, _) = repository.GetLayout("test");
             var layout = item.Value;
             Assert.AreEqual(3, layout.Stations.Count);
-            Assert.AreEqual(layout.Station("G").Value.Stretches.First().End.Station, layout.Station("Yb"));
+            Assert.AreEqual(layout.Station("G").Value.Stretches.First().End.Station, layout.Station("Yb").Value);
         }
 
         [ExpectedException(typeof (TrackLayoutException))]

@@ -4,7 +4,7 @@ using System.Linq;
 
 namespace Tellurian.Trains.Models.Planning.Tests
 {
-    public sealed class TestRepository : ILayoutRepository, ITimetableReadStore, IScheduleRepository
+    public sealed class TestRepository : ILayoutRepository, ITimetableRepository, IScheduleRepository
     {
         public (Maybe<TrackLayout> item, IEnumerable<Message> messages) GetLayout(string name)
         {
@@ -29,7 +29,7 @@ namespace Tellurian.Trains.Models.Planning.Tests
             return layout;
         }
 
-        (Maybe<Timetable> item, IEnumerable<Message> messages) ITimetableReadStore.GetTimetable(string name)
+        public (Maybe<Timetable> item, IEnumerable<Message> messages) GetTimetable(string name)
         {
             return GetTestTimetable(name);
         }
@@ -42,6 +42,11 @@ namespace Tellurian.Trains.Models.Planning.Tests
             result.AddTrain(TestDataFactory.CreateTrain1());
             result.AddTrain(TestDataFactory.CreateTrain2());
             return (Maybe<Timetable>.Item(result), messages);
+        }
+
+        public IEnumerable<Message> Save(Timetable timetable)
+        {
+            throw new NotSupportedException();
         }
 
         public (Maybe<Schedule> item, IEnumerable<Message> messages) GetSchedule(string name)

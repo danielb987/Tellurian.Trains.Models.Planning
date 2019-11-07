@@ -18,8 +18,8 @@ namespace Tellurian.Trains.Models.Planning.Tests
         public void PropertiesAreSet()
         {
             Assert.AreEqual("Godståg", Target.Category);
-            Assert.AreEqual(1234, Target.Number);
-            Assert.AreEqual("G1234", Target.ExtenalId);
+            Assert.AreEqual("G1234", Target.Number);
+            Assert.AreEqual("", Target.ExtenalId);
         }
 
         [TestMethod]

@@ -192,6 +192,9 @@ namespace Tellurian.Trains.Models.Planning
                 if (c2 != null)
                 {
                     if (c1.Arrival > c2.Departure) result.Add((c1, c2));
+                    if (c1.Arrival > c2.Arrival) result.Add((c1, c2));
+                    if (c1.Departure > c2.Arrival) result.Add((c1, c2));
+                    if (c1.Departure > c2.Departure) result.Add((c1, c2));
                     //if (c1.Station.Equals(c2.Station)) result.Add((c1, c2));
                 }
             }

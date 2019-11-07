@@ -9,14 +9,14 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Copyright>© Stefan Fjällemark 2019</Copyright>
     <Authors>Stefan Fjällemark</Authors>
-    <Version>1.3.1</Version>
-    <AssemblyVersion>1.3.1.0</AssemblyVersion>
+    <Version>1.3.2</Version>
+    <AssemblyVersion>1.3.2.0</AssemblyVersion>
     <LangVersion>8.0</LangVersion>
     <PackageId>Tellurian.Trains.Models.Planning</PackageId>
     <PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
     <RepositoryUrl>https://github.com/tellurianinteractive/Tellurian.Trains.Models.Planning</RepositoryUrl>
     <RepositoryType>Github</RepositoryType>
-    <PackageReleaseNotes>1.3.1: Refactored and first publication on Github and Nuget.</PackageReleaseNotes>
+    <PackageReleaseNotes>1.3.2: Bug fix of missing ITimetableRepository.</PackageReleaseNotes>
     <NeutralLanguage>en-GB</NeutralLanguage>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Company>Tellurian Interactive AB</Company>

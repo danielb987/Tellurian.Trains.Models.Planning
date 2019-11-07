@@ -1,13 +1,15 @@
-﻿namespace Tellurian.Trains.Models.Planning
+﻿using System.Collections.Generic;
+
+namespace Tellurian.Trains.Models.Planning
 {
-    using System.Collections.Generic;
+    public interface ITimetableRepository: ITimetableReadStore, ITimetableWriteStore { }
 
     public interface ITimetableReadStore
     {
         (Maybe<Timetable> item, IEnumerable<Message> messages) GetTimetable(string name);
     }
 
-    public interface ITimetableSaveStore
+    public interface ITimetableWriteStore
     {
         IEnumerable<Message> Save(Timetable timetable);
     }
