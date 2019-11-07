@@ -1,7 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 
-namespace Tellurian.Trains.Models.Planning.Tests {
+namespace Tellurian.Trains.Models.Planning.Tests
+{
 
     [TestClass]
     public class TimeTests {

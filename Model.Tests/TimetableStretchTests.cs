@@ -1,8 +1,9 @@
-﻿using System;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System;
 using System.Linq;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Tellurian.Trains.Models.Planning.Tests {
+namespace Tellurian.Trains.Models.Planning.Tests
+{
 
     [TestClass]
     public class TimetableStretchTests {
