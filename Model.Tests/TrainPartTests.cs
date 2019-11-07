@@ -1,13 +1,11 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
-using System.Linq;
 
 namespace Tellurian.Trains.Models.Planning.Tests
 {
     [TestClass]
     public class TrainPartTests
     {
-
         public Train Train { get; set; }
 
         [TestInitialize]
@@ -32,7 +30,7 @@ namespace Tellurian.Trains.Models.Planning.Tests
         [TestMethod]
         public void FromIndexIsLastIndexThrows()
         {
-            Assert.ThrowsException<ArgumentOutOfRangeException>(() => new TrainPart(Train, Train.Calls.Count() - 1, 1));
+            Assert.ThrowsException<ArgumentOutOfRangeException>(() => new TrainPart(Train, Train.Calls.Count - 1, 1));
         }
 
         [TestMethod]
