@@ -20,6 +20,8 @@
     <NeutralLanguage>en-GB</NeutralLanguage>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <Company>Tellurian Interactive AB</Company>
+    <PackageProjectUrl>https://github.com/tellurianinteractive/Tellurian.Trains.Models.Planning/projects/</PackageProjectUrl>
+    <PackageTags>model.trains scheduling timetables</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
